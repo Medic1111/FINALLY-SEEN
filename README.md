@@ -39,6 +39,20 @@ Leave your ego home. This industry is full of it and I'm sure you can find plent
 
 ---
 
+## RUNNING IT
+
+1. Fork this repo
+2. Open it on you IDE
+3. On the terminal (while on the root of the project) run `npm install`
+4. Then `cd client` and `npm install`
+5. With all dependencies installed, while still on the client you can run `npm start` to start the client on localhost 3000
+6. `cd ..` to return to the root
+7. `node server/app.js`
+
+> I highly suggest using nodemon to run the server. It is not a dependency of this project but feel free to use your globally installed one.
+
+---
+
 ### WHO AM I
 
 **:point_right: Aryse Tansy**
