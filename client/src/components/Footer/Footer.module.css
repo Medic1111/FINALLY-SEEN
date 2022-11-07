@@ -1,0 +1,18 @@
+.footer {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* CHANGE TO MATCH BODY */
+  background-color: transparent;
+}
+
+.small {
+  font-size: 1.3em;
+  letter-spacing: 0.3px;
+  color: #f7f7f7;
+}
