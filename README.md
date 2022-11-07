@@ -36,3 +36,13 @@ While I intend to give devs a good amount of coding freedom, I will be very spec
 ## WHAT IS NOT OKAY?
 
 Leave your ego home. This industry is full of it and I'm sure you can find plenty of opportunities to take it "for a walk". This is not the place.
+
+---
+
+### WHO AM I
+
+**:point_right: Aryse Tansy**
+:e-mail: paganowebdev@gmail.com
+:computer: [Portfolio](https://www.pagano.dev/)
+
+---
