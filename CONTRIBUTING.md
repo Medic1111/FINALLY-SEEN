@@ -25,3 +25,43 @@
 - If you run into problems, DO comment on your task. Other people and myself will gladly give a hand.
 
 - I intend to open GITHUB PROJECTS for this app. To be announced in the near future. For now, well organized issues will do the job.
+
+### Clone the repository
+
+- Fork the repository.
+
+- Clone the forked repository.
+    ~~~bash
+    $ git clone https://github.com/your_username/FINALLY-SEEN.git
+    ~~~
+
+- Clone all the branches from the parent repository, not only main branch.
+
+### Creating a branch
+
+- When starting work on a new issue, branch off from the `development` branch.
+    ~~~bash
+    $ git checkout -b <branch-name> development
+    ~~~
+
+- Switched to a new branch "<branch-name>".
+
+- Contributors working on same issue but in different branches can do sub-team fetches in case required.
+
+- Commit the changes with some descriptive messgaes.
+    ~~~bash
+    $ git commit -m "<commit message>"
+    ~~~
+
+- Once the issue is finished, the contributor shall push the changes to remote after commiting.
+    ~~~bash
+    $ git push origin <branch-name>
+    ~~~
+
+### Raising a Pull request
+
+- Once the branch has been pushed, the contributor shall raise the PR against the `development`.
+
+- Contributor shall incorporate review comments and upon approval, the PR shall proceed for merge into `development`.
+
+- As you update your PR and apply changes, mark each conversation as resolved.
