@@ -15,3 +15,8 @@
 :computer: [Portfolio](https://www.pagano.dev/)
 
 ---
+
+**:point_right: Cong Su Nguyen**
+:e-mail: sub1910692@student.ctu.edu.vn
+
+---
