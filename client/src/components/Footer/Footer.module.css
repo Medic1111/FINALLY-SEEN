@@ -7,12 +7,10 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  /* CHANGE TO MATCH BODY */
-  background-color: transparent;
+  background-color: rgb(3, 45, 70);
 }
 
 .small {
   font-size: 1.3em;
   letter-spacing: 0.3px;
-  color: #f7f7f7;
 }
