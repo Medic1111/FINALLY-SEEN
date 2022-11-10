@@ -7,10 +7,11 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: rgb(3, 45, 70);
+  /* background-color: rgb(3, 45, 70); */
 }
 
 .small {
   font-size: 1.3em;
   letter-spacing: 0.3px;
+  color: rgb(89, 28, 6);
 }

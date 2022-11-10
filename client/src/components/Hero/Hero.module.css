@@ -1,0 +1,65 @@
+.textBox {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 4vw;
+  background: url("../../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.span {
+  font-size: 0.15em;
+  letter-spacing: 1.2px;
+  padding-right: 0.25em;
+  cursor: pointer;
+  color: rgb(143, 232, 10);
+  border-right: solid 2px rgb(143, 232, 10);
+}
+.span:hover {
+  color: rgb(236, 108, 61);
+  border-right: solid 2px rgb(236, 108, 61);
+  transform: rotate(-360deg);
+  transition: 0.4s;
+}
+
+.p,
+.pLast {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14em;
+  letter-spacing: 6px;
+  color: rgb(211, 80, 32);
+  color: rgb(243, 85, 27);
+}
+.pLast {
+  color: rgba(143, 232, 10, 0.855);
+}
+
+@media (max-width: 798px) {
+  .textBox {
+    padding: 0.5em;
+  }
+  .p,
+  .pLast {
+    font-size: 11em;
+  }
+}
+
+@media (max-width: 498px) {
+  .textBox {
+    padding: unset;
+    gap: 3em;
+    overflow-y: scroll;
+    padding: 0.5em;
+  }
+  .p,
+  .pLast {
+    font-size: 5em;
+  }
+}
