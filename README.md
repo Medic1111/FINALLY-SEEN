@@ -4,6 +4,8 @@
 
 ---
 
+![hero image]('readme.png')
+
 ## STACK
 
 - Client:
@@ -40,31 +42,35 @@ Leave your ego home. This industry is full of it and I'm sure you can find plent
 ---
 
 ## HOW TO RUN?
+
 1. Fork this repo:
-    
-    Step 1: Click the Fork button to the right of the repository.
-    <img width="953" alt="image" src="https://user-images.githubusercontent.com/113319081/200523278-275f0ceb-f76c-4d0a-a61a-f1b192ba349f.png">
-    Step 2: We will then be navigated to the create new a fork page and click the create fork button.
-    <img width="532" alt="image" src="https://user-images.githubusercontent.com/113319081/200524284-fd38c701-bfbf-46d0-b4ae-51a9372071aa.png">
-2. Clone the project: 
-    
-    Step 1: On your Visual Studio Code IDE (or any IDE), click terminal and click new terminal.
-    <img width="960" alt="image" src="https://user-images.githubusercontent.com/113319081/200526564-dc48aa53-6d40-451e-882c-b617ec24df25.png">
-    Step 2: On the terminal run `git clone https://github.com/Medic1111/FINALLY-SEEN` to clone the project.
+
+   Step 1: Click the Fork button to the right of the repository.
+   <img width="953" alt="image" src="https://user-images.githubusercontent.com/113319081/200523278-275f0ceb-f76c-4d0a-a61a-f1b192ba349f.png">
+   Step 2: We will then be navigated to the create new a fork page and click the create fork button.
+   <img width="532" alt="image" src="https://user-images.githubusercontent.com/113319081/200524284-fd38c701-bfbf-46d0-b4ae-51a9372071aa.png">
+
+2. Clone the project:
+
+   Step 1: On your Visual Studio Code IDE (or any IDE), click terminal and click new terminal.
+   <img width="960" alt="image" src="https://user-images.githubusercontent.com/113319081/200526564-dc48aa53-6d40-451e-882c-b617ec24df25.png">
+   Step 2: On the terminal run `git clone https://github.com/Medic1111/FINALLY-SEEN` to clone the project.
+
 3. Install dependencies client and run client:
-    
-    Step 1: On the terminal in your VScode IDE run `cd .\FINALLY-SEEN\`
-    
-    Step 2: Then run `cd .\client\` and  run `npm install` to install dependencies client.
-    
-    Step 3: With all dependencies installed, while still on the client you can run `npm start` to start the client on localhost 3000
+
+   Step 1: On the terminal in your VScode IDE run `cd .\FINALLY-SEEN\`
+
+   Step 2: Then run `cd .\client\` and run `npm install` to install dependencies client.
+
+   Step 3: With all dependencies installed, while still on the client you can run `npm start` to start the client on localhost 3000
+
 4. Install dependencies server and run server:
-    
-    Step 1: On the new terminal in your VScode IDE(while on the root of the project) run `cd .\server\`
-    
-    Step 2: Then run `npm install` to install dependencies server.
-    
-    Step 3: With all dependencies installed, while still on the server you can run `node app.js` to start the server.
+
+   Step 1: On the new terminal in your VScode IDE(while on the root of the project) run `cd .\server\`
+
+   Step 2: Then run `npm install` to install dependencies server.
+
+   Step 3: With all dependencies installed, while still on the server you can run `node app.js` to start the server.
 
 > I highly suggest using nodemon to run the server. It is not a dependency of this project but feel free to use your globally installed one.
 
