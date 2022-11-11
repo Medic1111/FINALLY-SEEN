@@ -4,7 +4,14 @@ const Hero: React.FC = () => {
   return (
     <div className={classes.textBox}>
       <p className={classes.p}>
-        DEVELOPERS <span className={classes.span}>GH</span>
+        DEVELOPERS{" "}
+        <a
+          className={classes.span}
+          href="https://github.com/Medic1111/FINALLY-SEEN"
+          target="_blank"
+        >
+          GH
+        </a>
       </p>
       <p className={classes.p}>
         GET <span className={classes.span}>Who</span>
