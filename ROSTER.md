@@ -25,5 +25,7 @@
 
 **:point_right: Priya Saraf**
 :e-mail: priyasaraf1011@gmail.com
-
+---
+**:point_right: Aditya Narayan**
+:e-mail: 29adityanarayan2000@gmail.com
 ---
