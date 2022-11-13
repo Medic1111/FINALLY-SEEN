@@ -1,9 +1,10 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Who from "./components/Who/Who";
+import Why from "./components/Why/Why";
 
 function App() {
   const fetchTest = async () => {
@@ -17,13 +18,12 @@ function App() {
     fetchTest();
   }, []);
 
-  const [isAuth, setIsAuth] = useState<boolean>(false);
-
   return (
     <div className="App">
       <Header />
-      {!isAuth ? <Hero /> : <p>User is logged in</p>}
+      <Hero />
       <Who />
+      <Why />
       <Footer />
     </div>
   );

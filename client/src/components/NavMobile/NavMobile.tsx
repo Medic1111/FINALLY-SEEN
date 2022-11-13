@@ -54,13 +54,13 @@ const NavMobile: React.FC<Props> = ({ setShowNav }) => {
                 Who{" "}
               </a>
               <a
-                href=""
+                href="#why"
                 className="flex items-center justify-between px-6 py-3"
               >
                 Why
               </a>
               <a
-                href=""
+                href="https://github.com/Medic1111/FINALLY-SEEN/blob/main/CONTRIBUTING.md"
                 className="flex items-center justify-between px-6 py-3"
               >
                 Collab
