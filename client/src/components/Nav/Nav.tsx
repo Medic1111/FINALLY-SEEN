@@ -40,7 +40,7 @@ const Nav: React.FC<Props> = ({ setShowNav }) => {
           <li>
             <a
               className="text-gray-500 transition hover:text-gray-500/75"
-              href="/"
+              href="https://github.com/Medic1111/FINALLY-SEEN/blob/main/CONTRIBUTING.md"
             >
               Collab
             </a>

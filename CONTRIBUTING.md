@@ -2,6 +2,8 @@
 
 ### First things first:
 
+- We do use Github API to pull some stats including your profile picture if you're on the list of top 8 contributors. IF YOU'RE NOT OKAY WITH THAT, Please do not contribute =) or don't be top 8.
+
 - Your initial contribution will be adding your contact to ROSTER.md
 
 - You will find the template and instructions (hint: click raw to view markdown and copy)
@@ -31,32 +33,35 @@
 - Fork the repository.
 
 - Clone the forked repository.
-    ~~~bash
-    $ git clone https://github.com/your_username/FINALLY-SEEN.git
-    ~~~
+
+  ```bash
+  $ git clone https://github.com/your_username/FINALLY-SEEN.git
+  ```
 
 - Clone all the branches from the parent repository, not only main branch.
 
 ### Creating a branch
 
 - When starting work on a new issue, branch off from the `development` branch.
-    ~~~bash
-    $ git checkout -b <branch-name> development
-    ~~~
+
+  ```bash
+  $ git checkout -b <branch-name> development
+  ```
 
 - Switched to a new branch "<branch-name>".
 
 - Contributors working on same issue but in different branches can do sub-team fetches in case required.
 
 - Commit the changes with some descriptive messgaes.
-    ~~~bash
-    $ git commit -m "<commit message>"
-    ~~~
+
+  ```bash
+  $ git commit -m "<commit message>"
+  ```
 
 - Once the issue is finished, the contributor shall push the changes to remote after commiting.
-    ~~~bash
-    $ git push origin <branch-name>
-    ~~~
+  ```bash
+  $ git push origin <branch-name>
+  ```
 
 ### Raising a Pull request
 
