@@ -4,7 +4,7 @@
 
 ---
 
-![hero image]('readme.png')
+![hero image]("img1.png")
 
 ## STACK
 
