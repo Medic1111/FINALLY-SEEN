@@ -6,7 +6,7 @@
   flex-direction: column;
   width: 100%;
   padding: 0 4vw;
-  background: url("../../assets/hero.jpg");
+  /* background: url("../../assets/hero.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

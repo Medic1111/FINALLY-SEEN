@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Wrapper from "./components/Wrapper/Wrapper";
+import Who from "./components/Who/Who";
 
 function App() {
   const fetchTest = async () => {
@@ -22,7 +22,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Wrapper>{!isAuth ? <Hero /> : <p>User is logged in</p>}</Wrapper>
+      {!isAuth ? <Hero /> : <p>User is logged in</p>}
+      <Who />
       <Footer />
     </div>
   );

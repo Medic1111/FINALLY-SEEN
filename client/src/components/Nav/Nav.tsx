@@ -1,16 +1,96 @@
-import classes from "./Nav.module.css";
+// ICONMONSTR
 
-const Nav: React.FC = () => {
-  return <nav className={classes.nav}>{/*  WRITE NORMAL JSX HERE */}</nav>;
-  // REMOVE THIS WHEN DONE!
-  // Expected: Element LOGIN screen greater than 798px
-  // Expected: Icon LOGIN screen smaller than 798px
-  // Expected: Element SIGN UP screen greater than 798px
-  // Expected: Element screen smaller than 798px
-  // ICONS CAN BE FOUND AT FONTS GOOGLE ICONS
-  // USE MEDIA QUERY FOR CONDITIONAL
-  // STYLE TEXT ELEMENTS
-  // STYLE ICONS TO MATCH COLOR and Size
+interface Props {
+  setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Nav: React.FC<Props> = ({ setShowNav }) => {
+  return (
+    <div className="md:flex md:items-center md:gap-12">
+      <nav aria-label="Site Nav" className="hidden md:block">
+        <ul className="flex items-center gap-6 text-sm">
+          <li>
+            <a
+              className="text-gray-500 transition hover:text-gray-500/75"
+              href="https://github.com/Medic1111/FINALLY-SEEN"
+              target="_blank"
+            >
+              Github
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="text-gray-500 transition hover:text-gray-500/75"
+              href="#who"
+            >
+              Who
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="text-gray-500 transition hover:text-gray-500/75"
+              href="/"
+            >
+              Why
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="text-gray-500 transition hover:text-gray-500/75"
+              href="/"
+            >
+              Collab
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="flex items-center gap-4">
+        <div className="sm:flex sm:gap-4">
+          <a
+            className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+            href="/"
+          >
+            Login
+          </a>
+
+          <div className="hidden sm:flex">
+            <a
+              className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+              href="/"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+
+        <div className="block md:hidden">
+          <button
+            onClick={() => setShowNav(true)}
+            className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Nav;
