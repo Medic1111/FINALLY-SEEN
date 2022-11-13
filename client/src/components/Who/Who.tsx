@@ -87,7 +87,7 @@ const Who: React.FC = () => {
           <p className="text-center text-3xl font-bold text-gray-700 sm:text-4xl">
             Top Contributors
           </p>
-          <div className="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className=" items-center justify-center grid  gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.top.map((obj, index) => {
               return (
                 <>
