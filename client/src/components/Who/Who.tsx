@@ -8,7 +8,7 @@ const Who: React.FC = () => {
     collaborators: 0,
     commits: 0,
     prs: 0,
-    top: [{ avatar_url: "", login: "", url: "" }],
+    top: [{ avatar_url: "", login: "", html_url: "" }],
   });
 
   const fetchData = async () => {
@@ -103,7 +103,7 @@ const Who: React.FC = () => {
                         {obj.login}
                       </h3>
                       <span className="mt-1 font-medium text-gray-600 dark:text-gray-300">
-                        <a target="_blank" href={obj.url}>
+                        <a target="_blank" href={obj.html_url}>
                           Check Github
                         </a>
                       </span>
