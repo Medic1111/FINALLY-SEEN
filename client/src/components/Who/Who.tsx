@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-let count = 0;
-
 const Who: React.FC = () => {
   const [data, setData] = useState({
     collaborators: 0,
@@ -12,12 +10,13 @@ const Who: React.FC = () => {
   });
 
   const fetchData = async () => {
+    let count = 0;
     await axios
       .get("https://api.github.com/repos/Medic1111/FINALLY-SEEN/contributors")
       .then((serverRes) => {
-        serverRes.data.forEach(
-          (obj: { contributions: 0 }) => (count += obj.contributions)
-        );
+        serverRes.data.forEach((obj: { contributions: 0 }) => {
+          return (count += obj.contributions);
+        });
 
         setData({
           collaborators: serverRes.data.length,
