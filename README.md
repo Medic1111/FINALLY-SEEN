@@ -8,7 +8,7 @@
 
 ---
 
-![hero image]("img1.png")
+![hero image](img1.png)
 
 ## STACK
 
