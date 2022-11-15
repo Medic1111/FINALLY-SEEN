@@ -43,8 +43,8 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-around mt-12">
-            <button className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100    hover:bg-gray-100">
+          <div className="flex items-center justify-between w-2/5 mt-12 sm:w-1/5">
+            {/* <button className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100    hover:bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
                   d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"
                 />
               </svg>
-            </button>
+            </button> */}
 
             <button className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100    hover:bg-gray-100">
               <svg

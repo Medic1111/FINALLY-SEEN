@@ -1,10 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Who from "./components/Who/Who";
-import Why from "./components/Why/Why";
+import Auth from "./components/Auth/Auth";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 
@@ -25,6 +22,7 @@ function App() {
   return (
     <div className="App">
       {isAuth ? <Portfolio /> : <Home />}
+      {/* <Auth /> */}
       <Footer />
     </div>
   );
