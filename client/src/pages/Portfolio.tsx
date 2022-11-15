@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 const Portfolio: React.FC = () => {
   return (
     <section className="bg-white ">
-      <Header />
+      {/* <Header /> */}
       <div className="relative flex">
         <div className="min-h-screen lg:w-1/3"></div>
         <div className="hidden w-3/4 min-h-screen bg-gray-100  lg:block"></div>
@@ -44,23 +44,6 @@ const Portfolio: React.FC = () => {
           </div>
 
           <div className="flex items-center justify-between w-2/5 mt-12 sm:w-1/5">
-            {/* <button className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100    hover:bg-gray-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="teal"
-                stroke-width="2"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"
-                />
-              </svg>
-            </button> */}
-
             <button className="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100    hover:bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

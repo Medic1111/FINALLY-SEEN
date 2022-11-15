@@ -6,7 +6,7 @@ import Why from "../components/Why/Why";
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Who />
       <Why />

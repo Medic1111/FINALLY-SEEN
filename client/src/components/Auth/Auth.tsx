@@ -1,8 +1,12 @@
 import { useState } from "react";
 
-const Auth: React.FC = () => {
-  const [isLoggin, setIsLoggin] = useState(false);
+interface Props {
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
+  isLoggin: boolean;
+}
 
+const Auth: React.FC<Props> = ({ setShowModal, isLoggin, setIsLoggin }) => {
   return (
     <div className="mx-auto flex min-h-screen w-full items-center justify-center bg-white text-white">
       <section className="flex w-[30rem] flex-col space-y-10">
@@ -53,12 +57,16 @@ const Auth: React.FC = () => {
           <a
             href="#"
             className="font-medium text-teal-500 underline-offset-4 hover:underline"
+            onClick={() => setIsLoggin((prev) => !prev)}
           >
             {isLoggin ? "Create One" : "Login"}
           </a>
         </p>
 
-        <p className="cursor-pointer text-center text-2xl font-medium text-teal-600">
+        <p
+          onClick={() => setShowModal(false)}
+          className="cursor-pointer text-center text-2xl font-medium text-teal-600"
+        >
           FS
         </p>
       </section>

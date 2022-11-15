@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Footer from "./components/Footer/Footer";
-import Auth from "./components/Auth/Auth";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
+import Modal from "./components/Modal/Modal";
+import Header from "./components/Header/Header";
 
 function App() {
   const fetchTest = async () => {
@@ -17,12 +18,21 @@ function App() {
     fetchTest();
   }, []);
 
-  const [isAuth, setIsAuth] = useState(true);
+  const [isAuth, setIsAuth] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [isLoggin, setIsLoggin] = useState(false);
 
   return (
     <div className="App">
+      <Header setShowModal={setShowModal} setIsLoggin={setIsLoggin} />
       {isAuth ? <Portfolio /> : <Home />}
-      {/* <Auth /> */}
+      {showModal && (
+        <Modal
+          setShowModal={setShowModal}
+          isLoggin={isLoggin}
+          setIsLoggin={setIsLoggin}
+        />
+      )}
       <Footer />
     </div>
   );
