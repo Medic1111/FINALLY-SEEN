@@ -5,9 +5,9 @@ const NavLogged: React.FC = () => {
   return (
     <nav>
       <ul className="flex items-center gap-6 text-sm">
-        {NAV_ITEMS.map(({ label, icon }) => (
+        {NAV_ITEMS.map(({ label, icon, url }) => (
           <li key={label}>
-            <a href="https://github.com/Medic1111/FINALLY-SEEN">
+            <a href={url}>
               <span className={`${classes.navLink} ${classes.text}`}>
                 {label}
               </span>
