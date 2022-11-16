@@ -1,23 +1,24 @@
+import { NAV_ITEMS } from "./NavLogged.const";
 import classes from "./NavLogged.module.css";
 
 const NavLogged: React.FC = () => {
   return (
     <nav>
-      {
-        // Write you JSX here
-      }
+      <ul className="flex items-center gap-6 text-sm">
+        {NAV_ITEMS.map(({ label, icon, url }) => (
+          <li key={label}>
+            <a href={url}>
+              <span className={`${classes.navLink} ${classes.text}`}>
+                {label}
+              </span>
+              <span className={`${classes.navLink} ${classes.icon}`}>
+                <span className="material-symbols-outlined">{icon}</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </nav>
-    // This nav will have element 'top'
-    // element 'top' will be an icon on screen smaller than 798px
-    // This nav will have element 'latest'
-    // element 'latest' will be an icon on screen smaller than 798px
-    // This nav will have element 'logout'
-    // element will be an icon on screen smaller than 798px
-    // USE MEDIA QUERY TO ACCOMPLISH TASKS
-    // Choose icons at your will from FONTS GOOGLE ICONS
-    // Dont forget to link the icons CDN on html
-    // STYLE ELEMENTS TO MATCH APP STYLING
-    // HAVE FUN and delete this comments when done
   );
 };
 
