@@ -1,3 +1,4 @@
+import React from "react";
 import classes from "./Portal.module.css";
 const root = document.getElementById("portal") as HTMLElement;
 
