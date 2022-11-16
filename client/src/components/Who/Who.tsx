@@ -39,9 +39,9 @@ const Who: React.FC = () => {
       <section id="who" className="bg-white">
         <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-3xl font-bold text-gray-700 sm:text-4xl">Who</p>
+            <p className="text-3xl font-bold text-black-700 sm:text-4xl">Who</p>
 
-            <p className="mt-4 text-gray-600 sm:text-xl">
+            <p className="mt-4 text-black-600 sm:text-xl">
               Dynamic team of developers at all levels, always evolving but most
               importantly always counting.
             </p>
@@ -49,8 +49,8 @@ const Who: React.FC = () => {
 
           <div className="mt-8 sm:mt-12">
             <dl className="grid grid-cols-1 gap-4  sm:grid-cols-3">
-              <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-                <dt className="order-last text-lg font-medium text-gray-500">
+              <div className="flex flex-col rounded-lg border border-black-100 px-4 py-8 text-center">
+                <dt className="order-last text-lg font-medium text-black-500">
                   Collaborators
                 </dt>
 
@@ -59,8 +59,8 @@ const Who: React.FC = () => {
                 </dd>
               </div>
 
-              <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-                <dt className="order-last text-lg font-medium text-gray-500">
+              <div className="flex flex-col rounded-lg border border-black-100 px-4 py-6 text-center">
+                <dt className="order-last text-lg font-medium text-black-500">
                   Commits
                 </dt>
 
@@ -69,8 +69,8 @@ const Who: React.FC = () => {
                 </dd>
               </div>
 
-              <div className="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center">
-                <dt className="order-last text-lg font-medium text-gray-500">
+              <div className="flex flex-col rounded-lg border border-black-100 px-4 py-8 text-center">
+                <dt className="order-last text-lg font-medium text-black-500">
                   Team {"=)"}
                 </dt>
 
@@ -83,25 +83,26 @@ const Who: React.FC = () => {
         </div>
         {/* TEAM */}
         <div className="container px-6 py-8 mx-auto">
-          <p className="text-center text-3xl font-bold text-gray-700 sm:text-4xl">
+          <p className="text-center text-3xl font-bold text-black-700 sm:text-4xl">
             Top Contributors
           </p>
-          <div className=" items-center justify-center grid  gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className=" items-center justify-center grid  gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.top.map((obj, index) => {
               return (
                 <>
-                  <div className="w-full max-w-xs text-center">
+                  <div className="w-full max-w-xs text-center columns-auto">
                     <img
-                      className="object-cover object-center w-full h-48 mx-auto rounded-lg"
+                      className="object-cover overflow-x-auto object-center w-full h-48 mx-auto rounded-lg"
                       src={obj.avatar_url}
                       alt="avatar"
                     />
 
                     <div className="mt-2">
-                      <h3 className="text-lg font-medium text-gray-700 ">
+                      <h3 className="text-lg font-medium text-black-700 ">
                         {obj.login}
                       </h3>
-                      <span className="mt-1 font-medium text-gray-600 ">
+                      <span className="block w-full rounded  px-12 py-3 text-sm font-medium text-teal-900 
+                                        shadow hover:text-teal-600 focus:outline-none focus:ring active:text-teal-900 sm:w-auto">
                         <a target="_blank" href={obj.html_url}>
                           Check Github
                         </a>
