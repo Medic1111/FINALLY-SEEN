@@ -1,4 +1,6 @@
 import classes from "./Portal.module.css";
+import React from "react";
+import ReactDOM from "react-dom";
 const root = document.getElementById("portal") as HTMLElement;
 
 const Wrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
