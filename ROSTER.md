@@ -35,3 +35,9 @@
 
 **:point_right: Yahli Gitzi**
 :e-mail: yahligitzi2@gmail..com
+
+---
+
+**:point_right: Wasiu Adelakun**
+:e-mail: adelakunwasiu1000@gmail.com
+:computer: [Portfolio](https://waslead.netlify.app/)
