@@ -54,6 +54,7 @@ const NavMobile: React.FC<Props> = ({ setShowNav }) => {
                 Who{" "}
               </a>
               <a
+                onClick={() => setShowNav(false)}
                 href="#why"
                 className="flex items-center justify-between px-6 py-3"
               >
