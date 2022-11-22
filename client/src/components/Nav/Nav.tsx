@@ -1,6 +1,6 @@
 // ICONMONSTR
 import ButtonBox from "../ButtonBox/ButtonBox";
-import Hamburger from "../Hamburguer/Hamburger";
+import Hamburger from "../Hamburger/Hamburger";
 
 interface Props {
   setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
