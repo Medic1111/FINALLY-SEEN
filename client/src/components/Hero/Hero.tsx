@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed text-teal-50">
-            A collaboration initiative as open-source.
+            A contribution initiative as open-source.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
