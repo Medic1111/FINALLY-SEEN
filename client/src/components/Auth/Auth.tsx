@@ -9,7 +9,7 @@ interface Props {
 const Auth: React.FC<Props> = ({ setShowModal, isLoggin, setIsLoggin }) => {
   return (
     <div className="mx-auto flex min-h-screen w-full items-center justify-center bg-white text-white">
-      <section className="flex w-[30rem] flex-col space-y-10">
+      <section className="flex w-[30rem] flex-col space-y-10 px-5 md:px-0">
         <p className="text-center text-4xl font-medium text-teal-500">
           {isLoggin ? "Log In" : "Register"}
         </p>
