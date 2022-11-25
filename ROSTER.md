@@ -41,3 +41,8 @@
 **:point_right: Wasiu Adelakun**
 :e-mail: adelakunwasiu1000@gmail.com
 :computer: [Portfolio](https://waslead.netlify.app/)
+
+---
+
+**:point_right: Augustine Kirumba**
+:e-mail: kirumbaaugustinewambugu@gmail.com
