@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>
+  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Hero: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
