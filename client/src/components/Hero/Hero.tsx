@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>
+  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Hero: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
@@ -18,7 +18,7 @@ const Hero: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
             </strong>
           </h1>
 
-          <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed text-teal-50">
+          <p className="mt-4 sm:text-xl sm:leading-relaxed text-teal-800 sm:text-teal-50">
             A contribution initiative as open-source.
           </p>
 
