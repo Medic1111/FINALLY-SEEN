@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Header setShowModal={setShowModal} setIsLoggin={setIsLoggin} />
-      {isAuth ? <Portfolio /> : <Home />}
+      {isAuth ? <Portfolio /> : <Home setShowModal={setShowModal} setIsLoggin={setIsLoggin}  />}
       {showModal && (
         <Modal
           setShowModal={setShowModal}

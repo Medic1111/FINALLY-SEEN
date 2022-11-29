@@ -1,4 +1,11 @@
-const Hero: React.FC = () => {
+import React from "react";
+
+interface Props {
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const Hero: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
   return (
     <section className="relative bg-hero-img   bg-cover bg-center bg-no-repeat">
       <div className="absolute  inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
@@ -19,6 +26,10 @@ const Hero: React.FC = () => {
             <a
               href="#"
               className="block w-full rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-teal-700 focus:outline-none focus:ring active:bg-teal-500 sm:w-auto"
+              onClick={() => {
+                setShowModal(true);
+                setIsLoggin(false);
+              }}
             >
               Let me in
             </a>
