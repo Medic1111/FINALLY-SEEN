@@ -1,14 +1,9 @@
 // ICONMONSTR
 import ButtonBox from "../ButtonBox/ButtonBox";
 import Hamburger from "../Hamburger/Hamburger";
+import { NavigationStates } from "../../models/NavigationStates";
 
-interface Props {
-  setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
-  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Nav: React.FC<Props> = ({ setShowNav, setShowModal, setIsLoggin }) => {
+const Nav: React.FC<NavigationStates> = ({ setShowNav, setShowModal, setIsLoggin }) => {
   return (
     <div className="md:flex md:items-center md:gap-12">
       <nav aria-label="Site Nav" className="hidden md:block">
@@ -53,7 +48,13 @@ const Nav: React.FC<Props> = ({ setShowNav, setShowModal, setIsLoggin }) => {
       </nav>
 
       <div className="flex items-center gap-4">
-        <ButtonBox setShowModal={setShowModal} setIsLoggin={setIsLoggin} />
+        {
+          setShowModal && setIsLoggin
+          ?
+          <ButtonBox setShowModal={setShowModal} setIsLoggin={setIsLoggin} />
+          :
+          <></>
+        }
         <Hamburger setShowNav={setShowNav} />
       </div>
     </div>
