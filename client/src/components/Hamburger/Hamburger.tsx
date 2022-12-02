@@ -1,8 +1,6 @@
-interface Props {
-  setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { NavigationStates } from "../../models/NavigationStates";
 
-const Hamburger: React.FC<Props> = ({ setShowNav }) => {
+const Hamburger: React.FC<NavigationStates> = ({ setShowNav }) => {
   return (
     <div className="block md:hidden">
       <button
