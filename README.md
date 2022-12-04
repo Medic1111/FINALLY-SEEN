@@ -4,7 +4,7 @@
 
 ---
 
-[LIVE DEV DEMO](https://finally-seen.onrender.com/)
+[LIVE DEV DEMO](https://finally-seen-oizk.onrender.com/)
 
 ---
 
