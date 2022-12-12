@@ -1,19 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { UiCtx } from "../../features/ui-ctx";
+import { AuthCtx } from "../../features/auth-ctx";
 
-interface Props {
-  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
-  isLoggin: boolean;
-}
+const Auth: React.FC = () => {
+  const uiMgr = useContext(UiCtx);
+  const authMgr = useContext(AuthCtx);
 
-const Auth: React.FC<Props> = ({ setShowModal, isLoggin, setIsLoggin }) => {
   return (
     <div className="mx-auto flex min-h-screen w-full items-center justify-center bg-white text-white">
       <section className="flex w-[30rem] flex-col space-y-10 px-5 md:px-0">
         <p className="text-center text-4xl font-medium text-teal-500">
-          {isLoggin ? "Log In" : "Register"}
+          {authMgr.isLoggin ? "Log In" : "Register"}
         </p>
-        {isLoggin || (
+        {authMgr.isLoggin || (
           <label className="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-teal-500">
             <input
               type="text"
@@ -40,10 +39,10 @@ const Auth: React.FC<Props> = ({ setShowModal, isLoggin, setIsLoggin }) => {
         </label>
 
         <button className="transform rounded-sm bg-teal-600 py-2 font-bold duration-300 hover:bg-teal-400">
-          {isLoggin ? "LOG IN" : "REGISTER"}
+          {authMgr.isLoggin ? "LOG IN" : "REGISTER"}
         </button>
 
-        {isLoggin && (
+        {authMgr.isLoggin && (
           <a
             href="#"
             className="transform text-center font-semibold text-gray-500 duration-300 hover:text-gray-300"
@@ -53,18 +52,18 @@ const Auth: React.FC<Props> = ({ setShowModal, isLoggin, setIsLoggin }) => {
         )}
 
         <p className="text-teal-500 text-center text-lg">
-          {isLoggin ? "No account? " : "Already registered? "}
+          {authMgr.isLoggin ? "No account? " : "Already registered? "}
           <a
             href="#"
             className="font-medium text-teal-500 underline-offset-4 hover:underline"
-            onClick={() => setIsLoggin((prev) => !prev)}
+            onClick={() => authMgr.setIsLoggin((prev) => !prev)}
           >
-            {isLoggin ? "Create One" : "Login"}
+            {authMgr.isLoggin ? "Create One" : "Login"}
           </a>
         </p>
 
         <p
-          onClick={() => setShowModal(false)}
+          onClick={() => uiMgr.setShowModal(false)}
           className="cursor-pointer text-center text-2xl font-medium text-teal-600"
         >
           FS
