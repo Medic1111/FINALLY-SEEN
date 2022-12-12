@@ -1,13 +1,9 @@
 import { useState } from "react";
 import Nav from "../Nav/Nav";
 import NavMobile from "../NavMobile/NavMobile";
+import { NavigationDispatchs } from "../../models/NavigationDispatchs";
 
-interface Props {
-  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Header: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
+const Header: React.FC<NavigationDispatchs> = ({ setShowModal, setIsLoggin }) => {
   const [showNav, setShowNav] = useState(false);
 
   return (
