@@ -1,9 +1,6 @@
-interface Props {
-  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsLoggin: React.Dispatch<React.SetStateAction<boolean>>;
-}
+import { NavigationDispatchs } from "../../models/NavigationDispatchs";
 
-const ButtonBox: React.FC<Props> = ({ setShowModal, setIsLoggin }) => {
+const ButtonBox: React.FC<NavigationDispatchs> = ({ setShowModal, setIsLoggin }) => {
   return (
     <div className="sm:flex sm:gap-4">
       <p
