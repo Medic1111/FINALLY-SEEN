@@ -1,12 +1,17 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext } from "react";
+import { AuthCtx } from "./features/auth-ctx";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Modal from "./components/Modal/Modal";
 import Header from "./components/Header/Header";
+import { UiCtx } from "./features/ui-ctx";
 
 function App() {
+  const authMgr = useContext(AuthCtx);
+  const uiMgr = useContext(UiCtx);
+
   const fetchTest = async () => {
     await axios
       .get("/api")
@@ -18,21 +23,11 @@ function App() {
     fetchTest();
   }, []);
 
-  const [isAuth, setIsAuth] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [isLoggin, setIsLoggin] = useState(false);
-
   return (
     <div className="App">
-      <Header setShowModal={setShowModal} setIsLoggin={setIsLoggin} />
-      {isAuth ? <Portfolio /> : <Home setShowModal={setShowModal} setIsLoggin={setIsLoggin}  />}
-      {showModal && (
-        <Modal
-          setShowModal={setShowModal}
-          isLoggin={isLoggin}
-          setIsLoggin={setIsLoggin}
-        />
-      )}
+      <Header />
+      {authMgr.isAuth ? <Portfolio /> : <Home />}
+      {uiMgr.showModal && <Modal />}
       <Footer />
     </div>
   );

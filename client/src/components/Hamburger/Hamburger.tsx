@@ -1,11 +1,14 @@
-import { NavigationStates } from "../../models/NavigationStates";
+import { useContext } from "react";
+import { UiCtx } from "../../features/ui-ctx";
 
-const Hamburger: React.FC<NavigationStates> = ({ setShowNav }) => {
+const Hamburger: React.FC = () => {
+  const uiMgr = useContext(UiCtx);
+
   return (
     <div className="block md:hidden">
       <button
         onClick={() => {
-          setShowNav(true);
+          uiMgr.setShowMobileNav(true);
         }}
         className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
       >
