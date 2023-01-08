@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { UiCtx } from "../../features/ui-ctx";
+import { UiCtx } from "../../../features/ui-ctx";
 
 const Hamburger: React.FC = () => {
   const uiMgr = useContext(UiCtx);

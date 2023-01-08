@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useContext } from "react";
 import { AuthCtx } from "./features/auth-ctx";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/FooterComps/Footer/Footer";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Modal from "./components/Modal/Modal";

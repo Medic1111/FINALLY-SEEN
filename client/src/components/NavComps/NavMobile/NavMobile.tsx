@@ -1,7 +1,8 @@
 import { useContext } from "react";
-import { AuthCtx } from "../../features/auth-ctx";
-import { UiCtx } from "../../features/ui-ctx";
+import { AuthCtx } from "../../../features/auth-ctx";
+import { UiCtx } from "../../../features/ui-ctx";
 import NavLogged from "../NavLogged/NavLogged";
+import NavOut from "../NavOut/NavOut";
 
 const NavMobile: React.FC = () => {
   const uiMgr = useContext(UiCtx);
@@ -41,42 +42,7 @@ const NavMobile: React.FC = () => {
             </header>
 
             <nav className="flex flex-col divide-y divide-gray-200 border-t border-b border-gray-200 text-sm font-medium text-gray-500">
-              {!authMgr.isAuth ? (
-                <>
-                  {" "}
-                  <a
-                    href="https://github.com/Medic1111/FINALLY-SEEN"
-                    className="px-6 py-3"
-                    target="_blank"
-                  >
-                    {" "}
-                    Github{" "}
-                  </a>
-                  <a
-                    onClick={() => uiMgr.setShowMobileNav(false)}
-                    href="#who"
-                    className="px-6 py-3"
-                  >
-                    {" "}
-                    Who{" "}
-                  </a>
-                  <a
-                    onClick={() => uiMgr.setShowMobileNav(false)}
-                    href="#why"
-                    className="flex items-center justify-between px-6 py-3"
-                  >
-                    Why
-                  </a>
-                  <a
-                    href="https://github.com/Medic1111/FINALLY-SEEN/blob/main/CONTRIBUTING.md"
-                    className="flex items-center justify-between px-6 py-3"
-                  >
-                    Collab
-                  </a>
-                </>
-              ) : (
-                <NavLogged />
-              )}
+              {!authMgr.isAuth ? <NavOut /> : <NavLogged />}
             </nav>
           </div>
         </div>

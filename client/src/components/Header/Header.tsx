@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
-import Nav from "../Nav/Nav";
-import NavMobile from "../NavMobile/NavMobile";
+import Nav from "../NavComps/Nav/Nav";
+import NavMobile from "../NavComps/NavMobile/NavMobile";
 import { UiCtx } from "../../features/ui-ctx";
 
 const Header: React.FC = () => {

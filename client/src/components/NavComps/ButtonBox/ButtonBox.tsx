@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { AuthCtx } from "../../features/auth-ctx";
-import { UiCtx } from "../../features/ui-ctx";
+import { AuthCtx } from "../../../features/auth-ctx";
+import { UiCtx } from "../../../features/ui-ctx";
 
 const ButtonBox: React.FC = () => {
   const uiMgr = useContext(UiCtx);
