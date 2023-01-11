@@ -21,7 +21,6 @@
 
 ---
 
----
 
 **:point_right: Priya Saraf**
 :e-mail: priyasaraf1011@gmail.com
@@ -34,7 +33,7 @@
 ---
 
 **:point_right: Yahli Gitzi**
-:e-mail: yahligitzi2@gmail..com
+:e-mail: yahligitzi2@gmail.com
 
 ---
 
@@ -46,3 +45,7 @@
 
 **:point_right: Augustine Kirumba**
 :e-mail: kirumbaaugustinewambugu@gmail.com
+
+---
+
+**:point_right: Matthew Mu** :e-mail: matty.mu96@gmail.com
